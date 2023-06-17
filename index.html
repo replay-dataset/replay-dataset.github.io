@@ -1,1 +1,231 @@
-There will be light.
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Matching Acoustics">
+  <meta name="keywords" content="novel-view synthesis,audio-visual learning, acoustics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replay: Multi-modal Multi-view Acted Videos for Casual Holography</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Replay: Multi-modal Multi-view Acted Videos for Casual Holography</h1>
+          <!-- <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://changan.io/">Changan Chen</a><sup>1,3</sup>,</span>
+            <span class="author-block">
+              <a href="https://alexanderrichard.github.io">Alexander Richard</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="http://shapovalov.ro">Roman Shapovalov</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.vamsiithapu.com/">Vamsi K. Ithapu</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://nneverova.github.io/">Natalia Neverova</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.utexas.edu/~grauman/">Kristen Grauman</a><sup>1,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a><sup>3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Texas at Austin,</span>
+            <span class="author-block"><sup>2</sup>Reality Labs Research at Meta,</span>
+            <span class="author-block"><sup>3</sup>FAIR, Meta AI</span>
+          </div>
+
+          <div class="is-size-4 has-text-centered">
+            <p> <a href="https://cvpr2023.thecvf.com/">CVPR 2023</a> </p>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/2301.08730"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://youtu.be/5X8JdLYUA8w"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- show a static image below-->
+      <img src="static/images/appen-setup.png">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
+      <h2 class="subtitle has-text-centered">
+        <!-- We propose to leverage the acoustic cues in the visual input to help dereverberate the audio. -->
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/steve.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We introduce Replay, a collection of multi-view, multi-modal videos of humans interacting socially. 
+            Each scene is filmed in high production quality, from different viewpoints with several static cameras, 
+            as well as wearable action cameras, and recorded with a large array of microphones at different positions 
+            in the room. Overall, the dataset contains over 3000 minutes of footage and over 5 million timestamped 
+            high-resolution frames annotated with camera poses and partially with foreground masks. 
+            The Replay dataset has many potential applications, such as novel-view synthesis, 3D reconstruction, 
+            novel-view acoustic synthesis, human body and face analysis, and training generative models. 
+            We provide a benchmark for training and evaluating novel-view synthesis, with two scenarios of 
+            different difficulty. Finally, we evaluate several baseline state-of-the-art methods on the new benchmark.
+          </p>
+        </div>
+        <!-- <video id="what_is_nvas" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/what_is_nvas.mp4"
+                  type="video/mp4">
+        </video> -->
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- dataset section-->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Replay dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            The full Replay dataset consists of 46 scenes of social interactions between people, such as playing boarding games,
+            exercising, or unwrapping presents. Each scene is about 10 minutes long and filmed with 12 cameras, static and dynamic.
+            Audio is captured separately by 12 binaural microphones and additional near-range microphones for each actor and for 
+            each egocentric video. All sensors are temporally synchronized, undistorted, geometrically calibrated, and color calibrated.
+          </p>
+        </div>
+        <p><b>Example DSLR Videos and Binaural Audios</b> <br>
+          (wear headphone to hear the spatial sound)</p>
+        <!-- <video id="replay_nvas" autoplay muted loop playsinline height="100%"> -->
+        <video id="replay_nvas" height="100%" controls>
+          <source src="./static/videos/replay_demo_720p.mov"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <!-- Code section-->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Get Started</h2>
+        <div class="content has-text-justified">
+          <p> 
+            TODO: 
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{chen2023nvas,
+    title = {Learning Audio-Visual Dereverberation},
+    author = {Changan Chen and Alexander Richard and Roman Shapovalov and Vamsi Krishna Ithapu and Natalia Neverova and Kristen Grauman and Andrea Vedaldi},
+    year = {2023},
+    booktitle = {CVPR},
+    }</code></pre>
+  </div>
+</section>
+
+
+<!-- <footer class="footer">
+</footer> -->
+
+</body>
+</html>
